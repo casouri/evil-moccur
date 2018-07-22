@@ -12,7 +12,7 @@ With =evil-moccur-mode= enabled,
 you automatically enter =evil-moccur-state= when you starts =moccur=.
 
 You can hit =ESC= in normal state to enter moccur state,
-and hit =i= in moccur state to enter normal state.
+and hit =i= in moccur state to enter normal state (and =moccur-edit-mode=).
 
 Here is the bindings in moccur state:
 
