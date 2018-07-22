@@ -1,0 +1,57 @@
+#+TITLE: evil-moccur
+
+This mode intergrade [[https://www.emacswiki.org/emacs/color-moccur.el][color-moccur]] with evil.
+
+* Usage
+
+load evil-moccur.el with either =use-package= or =(require 'evil-moccur)=.
+
+Enable =evil-moccur-mode= with =(evil-moccur-mode)=.
+
+With =evil-moccur-mode= enabled, 
+you automatically enter =evil-moccur-state= when you starts =moccur=.
+
+You can hit =ESC= in normal state to enter moccur state,
+and hit =i= in moccur state to enter normal state.
+
+Here is the bindings in moccur state:
+
+| key            | command                         |
+|----------------+---------------------------------|
+| "e"            | moccur-toggle-buffer            |
+| "\C-c\C-c"     | moccur-mode-goto-occurrence     |
+| "\C-m"         | moccur-mode-goto-occurrence     |
+| "d"            | moccur-kill-line                |
+| "\C-k"         | moccur-kill-line                |
+| "\M-d"         | moccur-mode-kill-file           |
+| "/"            | moccur-mode-undo                |
+| "q"            | moccur-quit                     |
+| "n"            | moccur-next                     |
+| "p"            | moccur-prev                     |
+| "j"            | moccur-next                     |
+| "k"            | moccur-prev                     |
+| [wheel-down]   | moccur-next                     |
+| [wheel-up]     | moccur-prev                     |
+| "s"            | moccur-narrow-down              |
+| "u"            | moccur-search-undo              |
+| "g"            | moccur-search-update            |
+| [down]         | moccur-next                     |
+| [up]           | moccur-prev                     |
+| "t"            | moccur-toggle-view              |
+| "b"            | moccur-file-scroll-down         |
+| " "            | moccur-file-scroll-up           |
+| "\M-v"         | moccur-scroll-down              |
+| "\C-v"         | moccur-scroll-up                |
+| "h"            | moccur-next-file                |
+| "l"            | moccur-prev-file                |
+| "\M-n"         | moccur-next-file                |
+| "\M-p"         | moccur-prev-file                |
+| [M-wheel-down] | moccur-next-file                |
+| [M-wheel-up]   | moccur-prev-file                |
+| [down-mouse-1] | moccur-mouse-select1            |
+| "<"            | moccur-file-beginning-of-buffer |
+| ">"            | moccur-file-end-of-buffer       |
+| "i"            | 'moccur-edit-mode-in            |
+| "\C-x\C-q"     | 'moccur-edit-mode-in            |
+| "\C-c\C-i"     | 'moccur-edit-mode-in            |
+
