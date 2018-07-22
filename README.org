@@ -1,6 +1,6 @@
 #+TITLE: evil-moccur
 
-This mode intergrade [[https://www.emacswiki.org/emacs/color-moccur.el][color-moccur]] with evil.
+This mode intergrades [[https://www.emacswiki.org/emacs/color-moccur.el][color-moccur]] with evil.
 
 * Usage
 
